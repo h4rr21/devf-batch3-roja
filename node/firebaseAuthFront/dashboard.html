@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,9 +16,27 @@
         <img id="user-image" src="img/profile.png" onclick="logout()">
         <p id="user-name">Hola como estás!</p>
     </nav>
+
     <div class="container">
-        <div>SOMETHINGGGGGGG</div>
+            <div class="newPost centrado white-box">
+                <textarea row="2" cols="10" id="newPostInput"></textarea>
+                <button class="btn-primary" onclick="postSomething()">Post</button>
+            </div>
     </div>
+    <div class="container" id="posts-container">
+
+    </div>
+
+    <div class="post white-box" id="emptyPost" style="display:none">
+        <div class="post-head">
+            <img src="img/profile.png">
+            <h5>ielow</h5>
+        </div>
+        <div class="post-body">
+            <h3>asd</h3>
+        </div>
+    </div>
+
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="js/dashboard.js"></script>
 </body>
